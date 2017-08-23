@@ -1,0 +1,135 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 240px; height: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(30%, #efefef));
+    background: linear-gradient(to bottom, #fff, #efefef 30%);
+}
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+#sign-in .btn span {
+    font-size: 14px;
+    font-family: Roboto,arial,sans-serif;
+    font-weight: 500;
+    letter-spacing: .21px;
+    margin: 0 auto;
+}
+
+#user-info {
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap
+}
+
+#user-info .user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+#user-info .user img {
+    width: 40px;
+    height: 40px;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .3);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, .3);
+    margin: 0 15px 0 5px;
+    border-radius: 50%;
+}
+
+#user-info .user a {
+    color: #262626;
+    font-size: 14px;
+    font-family: Roboto,arial,sans-serif;
+    font-weight: 500;
+    letter-spacing: .21px;
+    text-decoration: none;
+}
+
+#user-info .user a:hover {
+    text-decoration: none;
+}
+
+#user-info .user .btn {}
+
+#user-info .user:hover {
+    background-color: rgba(0, 0, 0, .12);
+}
+
+.btn {
+    color: #262626;
+    font-size: 14px;
+    padding: 5px 8px;
+    font-family: Roboto,arial,sans-serif;
+    font-weight: 500;
+    letter-spacing: .21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    background-color: #fff;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+    -webkit-transition: -webkit-box-shadow .218s;
+    transition: -webkit-box-shadow .218s;
+    transition: box-shadow .218s;
+    transition: box-shadow .218s, -webkit-box-shadow .218s;
+    cursor: pointer;
+    outline: none; border: none
+}
+
+.btn > * {
+    pointer-events: none;
+}
+
+.btn img {
+    height: 20px;
+    margin: 0 5px;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0 0 3px 3px rgba(66, 133, 244, .3);
+            box-shadow: 0 0 3px 3px rgba(66, 133, 244, .3);
+}
